@@ -31,13 +31,15 @@ public class CustomListAdapter extends ArrayAdapter<String> {
         LayoutInflater inflater=context.getLayoutInflater();
         View rowView=inflater.inflate(R.layout.custom_list, null,true);
 
-        TextView txtTitle = (TextView) rowView.findViewById(R.id.item);
+        TextView txtTitle = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-        TextView extratxt = (TextView) rowView.findViewById(R.id.description);
+        TextView authortxt = (TextView) rowView.findViewById(R.id.description);
+        TextView datetxt = (TextView) rowView.findViewById(R.id.description);
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
-        extratxt.setText("Description "+itemname[position]);
+        authortxt.setText("Imaya D. N.");
+        datetxt.setText("Saturday July 22 2017");
         return rowView;
 
     };
