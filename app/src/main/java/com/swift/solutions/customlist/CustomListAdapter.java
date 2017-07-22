@@ -33,8 +33,8 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
         TextView txtTitle = (TextView) rowView.findViewById(R.id.title);
         ImageView imageView = (ImageView) rowView.findViewById(R.id.icon);
-        TextView authortxt = (TextView) rowView.findViewById(R.id.description);
-        TextView datetxt = (TextView) rowView.findViewById(R.id.description);
+        TextView authortxt = (TextView) rowView.findViewById(R.id.author);
+        TextView datetxt = (TextView) rowView.findViewById(R.id.date_time);
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);

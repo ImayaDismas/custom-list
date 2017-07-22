@@ -10,14 +10,14 @@ import android.widget.Toast;
 public class Technology extends AppCompatActivity {
     ListView list;
     String[] itemname ={
-            "Safari",
-            "Camera",
-            "Global",
-            "FireFox",
-            "UC Browser",
-            "Android Folder",
-            "VLC Player",
-            "Cold War"
+            "How to Use the Safari Web Browser on iPhone - Lifewire",
+            "Digital Cameras & Digital Camera Accessories - Best Buy",
+            "Global News | Latest & Current News - Weather, Sports & Health News",
+            "Mozilla's new Firefox features improve browsing on iOS and Android",
+            "How to Block Pop-Ups in UC Browser | NDTV Gadgets360.com",
+            "Google brings Motion Stills to Android, where it’s all motion and no stills",
+            "16.10 - Something is going buggy when i open vlc player - Ask Ubuntu",
+            "Cold War - Causes, Events, Pictures & Videos - History.com"
     };
 
     Integer[] imgid={
