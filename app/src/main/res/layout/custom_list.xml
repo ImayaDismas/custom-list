@@ -8,12 +8,13 @@
         android:id="@+id/mainHolder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/icon"
-            android:layout_width="100dp"
-            android:layout_height="100dp" />
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"/>
 
         <TextView
             android:id="@+id/title"
@@ -31,17 +32,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon"
+            android:layout_marginTop="5dp"
+            android:paddingTop="2dp"
             android:text="[]"
+            android:textStyle="bold"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp" />
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon"
-            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="1dp"
             android:paddingLeft="5dp"
+            android:textSize="11sp"
             android:layout_toRightOf="@+id/dot"
             android:text="Unknown" />
 
@@ -51,18 +57,22 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon"
             android:layout_toRightOf="@+id/author"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
+            android:paddingTop="3dp"
             android:text="|"
             android:textColor="@android:color/darker_gray"
-            android:textSize="20sp" />
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/date_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/icon"
-            android:paddingTop="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingTop="1dp"
             android:paddingLeft="5dp"
+            android:textSize="11sp"
             android:layout_toRightOf="@+id/dot1"
             android:text="Unknown" />
 

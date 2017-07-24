@@ -49,10 +49,10 @@ public class Techncrunch extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                // Do something after 5s = 5000ms
+                // Do something after 3s = 3000ms
                 rView.setAdapter(rcAdapter);
             }
-        }, 2000);
+        }, 3000);
     }
     public List<AllNewsConstructor> getAllNews(){
         loading = ProgressDialog.show(Techncrunch.this, "Please wait...", "Fetching news...", false, false);
