@@ -4,6 +4,8 @@ import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -55,7 +57,7 @@ public class Technology extends AppCompatActivity {
         final  ListView list = (ListView)findViewById(R.id.list);
 
         // Construct the data source
-        List<AllNewsConstructor> rowListItem = getAllNews();
+        final List<AllNewsConstructor> rowListItem = getAllNews();
         // Create the adapter to convert the array to views
         final CustomListAdapter adapter=new CustomListAdapter(this, rowListItem);
         // Attach the adapter to a ListView
@@ -68,17 +70,17 @@ public class Technology extends AppCompatActivity {
             }
         }, 3000);
 
-//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//                // TODO Auto-generated method stub
-//                String Slecteditem= itemname[+position];
-//                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO Auto-generated method stub
+                String Slecteditem= String.valueOf(rowListItem.get(position).getAuthor());
+                Toast.makeText(getApplicationContext(), Slecteditem, Toast.LENGTH_SHORT).show();
+
+            }
+        });
     }
 
     public List<AllNewsConstructor> getAllNews(){
